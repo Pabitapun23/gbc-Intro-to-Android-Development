@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!--    add our UI elements here-->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Apple"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:background="#ABED5D"-->
+    <!--        />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Banana adsfsdfasdfasdfasdfasdfasdf"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:background="#E3DA8A"-->
+    <!--        />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="#F3E77D"-->
+    <!--        android:padding="20dp"-->
+    <!--        android:layout_margin="30dp">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Dog"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="30sp"-->
+    <!--            android:background="#8E24AA" />-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Cat"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="30sp"-->
+    <!--            android:background="#FDD835" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Strawberry"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:background="#E68078"-->
+    <!--        />-->
+
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Enter your name"/>-->
+
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Enter your age"-->
+    <!--        android:inputType="number"/>-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/pikachu" />-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/ditto" />-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/bulbasaur" />-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Click Me 1!"-->
+    <!--        />-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Click Me 2!"-->
+    <!--        />-->
+    <!--    <Button-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Click Me 3!"-->
+    <!--        />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Welcome to my app"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:background="#FFFF8D"-->
+    <!--        />-->
+
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Enter your name"-->
+    <!--        />-->
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Enter your age"-->
+    <!--        android:inputType="number"-->
+    <!--        />-->
+
+
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#29B6F6"-->
+    <!--        android:text="Press me!"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        />-->
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:text="results go here"/>-->
+
+
+    <!-- Age calculator app -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF8D"
+        android:text="Welcome to my app"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your age"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnPressMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#29B6F6"
+        android:text="Press me!" />
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="results go here"
+        android:textSize="20sp" />
+
+<!--  Price Calculator app-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price Calculator"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="#FFFF8D"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/etProducePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="What is the price of the product?"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Calculate"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvPriceDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="output goes here"/>
+
+
+</LinearLayout>
