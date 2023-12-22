@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity"
+    android:layout_margin="8dp">
+    <!--    . - refers to class
+            tools:context=".SecondActivity" - used for association
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Activity"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="42sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        />
+
+<!--    android:layout_margin="8dp" - standard margin for android-->
+<!--    android:textSize="24sp" - use multiple of 8 - better for mapping-->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="24sp"
+        android:layout_margin="8dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textSize="24sp"
+        android:inputType="text"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/tv_membership_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Membership Type: "
+        android:textSize="24sp"
+        android:layout_margin="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgroup_membership"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold"
+            android:checked="true"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_platinum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Platinum"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="24sp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>

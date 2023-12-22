@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<!-- @+id/tv_title :- @ - referring to resource package-->
+<!--    + - adding a res; creating a new resource-->
+<!--    dp - density independent pixel - we are using it for layout margin, height, width-->
+<!--    sp - Scalable Pixels OR scale-independent pixels; we are using it for text-->
+<!--       - this is like the dp unit, but it is also scaled by the user's font size preference.
+             It is recommended you use this unit when specifying font sizes, so they will be adjusted for both the screen density and user's preference.-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/btn_click_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click me!"
+        android:layout_margin="6dp"
+        />
+
+<!--    android:gravity - used for alignment-->
+    <TextView
+        android:id="@+id/tv_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        android:text="Counter"/>
+
+</LinearLayout>
