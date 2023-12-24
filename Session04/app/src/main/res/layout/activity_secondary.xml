@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Session 04 Demo!"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/btnDisableAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disable All"/>
+    <Button
+        android:id="@+id/btnResetAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset All"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <Button
+            android:id="@+id/btnPressMe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press Me 1"/>
+        <Button
+            android:id="@+id/btnPressMe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press Me 2"/>
+        <Button
+            android:id="@+id/btnPressMe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press Me 3"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+
+
+
+</LinearLayout>
