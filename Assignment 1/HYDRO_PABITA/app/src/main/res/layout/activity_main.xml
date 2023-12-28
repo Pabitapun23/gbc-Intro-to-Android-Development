@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    android:layout_margin="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Electricity Bill Calculator"
+        android:textSize="30sp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morning usage (kwh)"
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/etMorningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter morning usage in kwh"
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evening usage (kwh)"
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/etEveningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter evening usage in kwh"
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+
+    <Switch
+        android:id="@+id/swRenewableEnergySource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use renewable energy source?"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#F11303"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_margin="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="  Reset  "
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/receiptHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_margin="8dp"/>
+
+
+    <TextView
+        android:id="@+id/receiptBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:paddingLeft="30dp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/receiptAmountPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>
