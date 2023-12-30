@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        android:background="#673AB7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+<!--    Screen 1: Pay for Parking Screen-->
+<!--    A form for entering parking information-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Parking Lot"
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+    <RadioGroup
+        android:id="@+id/rgParkingLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <RadioButton
+            android:id="@+id/rbParkingA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking Lot A"
+            android:layout_marginRight="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbParkingB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking Lot B"
+            android:layout_marginLeft="10dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#D82316"
+
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hours: "
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/etParkingHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the number of hours to park"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="License Plate: "
+        android:textSize="20sp"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/etLicensePlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the License Plate"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAY NOW"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/tvReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_margin="8dp"/>
+
+
+</LinearLayout>
